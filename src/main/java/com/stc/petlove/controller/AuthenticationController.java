@@ -26,13 +26,7 @@ import java.security.Principal;
 import java.util.Date;
 import java.util.HashMap;
 
-/**
- * Created by: IntelliJ IDEA
- * User      : thangpx
- * Date      : 3/15/23
- * Time      : 9:38 AM
- * Filename  : AuthenticationController
- */
+
 @Slf4j
 @RestController
 @RequestMapping("/rest/login")
@@ -42,9 +36,6 @@ public class AuthenticationController {
     private final CustomUserDetailsService customUserDetailsService;
 
     private final JwtTokenUtils jwtTokenUtils;
-
-    //@Value("${google.verifyUrl}")
-   // private String googleVerifyUrl;
 
     private final RestTemplate restTemplate = new RestTemplate();
 
@@ -77,37 +68,6 @@ public class AuthenticationController {
         return new ResponseEntity<>(result, HttpStatus.OK);
     }
 
-    /*@ApiOperation(value = "login google (Access Token), lấy avatar google")
-    @PostMapping("/google")
-    public ResponseEntity<TokenDetails> loginGoogle(@RequestHeader(name = "accessToken") String accessToken) {
-        //String urlRequest = googleVerifyUrl + accessToken;
-        String email;
-        String avatar;
-        try {
-            ResponseEntity<HashMap> responseEntity = restTemplate.exchange(urlRequest, HttpMethod.GET, null, HashMap.class);
-            HashMap<String, String> map = responseEntity.getBody();
-            email = map.get("email");
-            avatar = map.get("picture");
-        } catch (Exception ex) {
-            throw new InvalidException("Token không hợp lệ");
-        }
-        UserAuthenticationToken authenticationToken = new UserAuthenticationToken(
-                email,
-                null,
-                false
-        );
-        try {
-            authenticationManager.authenticate(authenticationToken);
-        } catch (UserNotFoundAuthenticationException | BadCredentialsException ex) {
-            throw new InvalidException(ex.getMessage());
-        }
-        final JwtUserDetails userDetails = customUserDetailsService
-                .loadUserByUsername(email);
-        final TokenDetails result = jwtTokenUtils.getTokenDetails(userDetails, avatar);
-        log.info(String.format("User %s login via google at %s", email, new Date()));
-        return new ResponseEntity<>(result, HttpStatus.OK);
-    }
-*/
 
     @GetMapping("/hello")
     @PreAuthorize("hasRole('ADMIN')")

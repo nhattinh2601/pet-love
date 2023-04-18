@@ -10,13 +10,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Optional;
 
-/**
- * Created by: IntelliJ IDEA
- * User      : thangpx
- * Date      : 3/15/23
- * Time      : 8:43 AM
- * Filename  : AuditingConfig
- */
+
 @Configuration
 @EnableMongoAuditing
 public class AuditingConfig implements AuditorAware<String> {

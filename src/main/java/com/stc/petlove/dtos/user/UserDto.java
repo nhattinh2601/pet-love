@@ -8,13 +8,7 @@ import lombok.Setter;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by: IntelliJ IDEA
- * User      : thangpx
- * Date      : 3/15/23
- * Time      : 9:07 AM
- * Filename  : UserDto
- */
+
 @Getter
 @Setter
 @NoArgsConstructor

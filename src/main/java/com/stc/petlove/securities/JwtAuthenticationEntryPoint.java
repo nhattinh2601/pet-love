@@ -9,13 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.Serializable;
 
-/**
- * Created by: IntelliJ IDEA
- * User      : thangpx
- * Date      : 8/29/22
- * Time      : 15:46
- * Filename  : JwtAuthenticationEntryPoint
- */
+
 @Component
 public class JwtAuthenticationEntryPoint implements AuthenticationEntryPoint, Serializable {
 

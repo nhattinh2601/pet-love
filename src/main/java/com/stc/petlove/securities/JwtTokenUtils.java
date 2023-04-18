@@ -18,13 +18,7 @@ import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-/**
- * Created by: IntelliJ IDEA
- * User      : thangpx
- * Date      : 8/29/22
- * Time      : 15:50
- * Filename  : JwtTokenUtils
- */
+
 @Component
 public class JwtTokenUtils implements Serializable {
 

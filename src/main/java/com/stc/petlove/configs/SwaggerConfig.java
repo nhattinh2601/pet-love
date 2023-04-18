@@ -10,13 +10,7 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
-/**
- * Created by: IntelliJ IDEA
- * User      : thangpx
- * Date      : 3/15/23
- * Time      : 9:13 AM
- * Filename  : SwaggerConfig
- */
+
 @EnableWebMvc
 @Configuration
 @Profile("dev")

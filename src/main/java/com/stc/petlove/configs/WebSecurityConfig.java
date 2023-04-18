@@ -17,13 +17,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 
 import java.util.Arrays;
 import java.util.List;
-/**
- * Created by: IntelliJ IDEA
- * User      : thangpx
- * Date      : 3/15/23
- * Time      : 9:43 AM
- * Filename  : WebSecurityConfig
- */
+
 @Configuration
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)

@@ -9,13 +9,7 @@ import org.springframework.data.mongodb.repository.Query;
 import java.util.List;
 import java.util.Optional;
 
-/**
- * Created by: IntelliJ IDEA
- * User      : thangpx
- * Date      : 3/15/23
- * Time      : 8:49 AM
- * Filename  : UserRepository
- */
+
 public interface UserRepository extends MongoRepository<TaiKhoan, String> {
 
     Optional<TaiKhoan> findByEmail(String email);

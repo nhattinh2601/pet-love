@@ -10,13 +10,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.stream.Collectors;
 
-/**
- * Created by: IntelliJ IDEA
- * User      : thangpx
- * Date      : 8/29/22
- * Time      : 15:54
- * Filename  : TaiKhoanDetailsService
- */
 @Slf4j
 @Service
 public class CustomUserDetailsService implements UserDetailsService {

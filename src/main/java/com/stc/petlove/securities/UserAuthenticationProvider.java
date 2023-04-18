@@ -9,13 +9,7 @@ import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 
-/**
- * Created by: IntelliJ IDEA
- * User      : thangpx
- * Date      : 8/29/22
- * Time      : 15:55
- * Filename  : TaiKhoanAuthenticationProvider
- */
+
 @Slf4j
 @Service
 public class UserAuthenticationProvider implements AuthenticationProvider {
